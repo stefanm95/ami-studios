@@ -13,7 +13,7 @@ const rituals = [
 
 export function SignatureRituals() {
   return (
-    <Section id="rituals" className="relative text-charcoal">
+    <Section id="rituals" className="relative text-white">
       <Container className="relative overflow-hidden">
         <SceneDepth />
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
@@ -22,12 +22,22 @@ export function SignatureRituals() {
             title="Wellness with the quiet confidence of a private club."
             copy="Each session is structured around pace, privacy and sensory detail, not a generic treatment menu."
           />
-          <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid gap-3 sm:grid-cols-2">
+          <motion.div
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid gap-3 sm:grid-cols-2"
+          >
             {rituals.map((ritual) => (
               <motion.div key={ritual} variants={fadeUp}>
                 <Card className="p-6">
-                  <p className="text-xs uppercase tracking-[0.2em] text-bronze">Included</p>
-                  <h3 className="mt-3 font-display text-3xl">{ritual}</h3>
+                  <p className="text-xs uppercase tracking-[0.2em] text-champagne">
+                    Included
+                  </p>
+                  <h3 className="mt-3 font-display text-3xl text-white">
+                    {ritual}
+                  </h3>
                 </Card>
               </motion.div>
             ))}

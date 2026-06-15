@@ -1,7 +1,12 @@
 import type { ComponentPropsWithoutRef } from "react";
-import { Card } from "../card/Card";
 import { cn } from "../../../lib/cn";
+import { Card } from "../card/Card";
 
-export function LuxuryCard({ className, ...props }: ComponentPropsWithoutRef<"article">) {
-  return <Card variant="luxury" className={cn("text-charcoal", className)} {...props} />;
+export function LuxuryCard({
+  className,
+  ...props
+}: ComponentPropsWithoutRef<"article">) {
+  return (
+    <Card variant="luxury" className={cn("text-white", className)} {...props} />
+  );
 }
