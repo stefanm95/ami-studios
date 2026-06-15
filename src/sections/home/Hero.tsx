@@ -18,9 +18,9 @@ export function Hero() {
         muted
         loop
         playsInline
-        initial={{ scale: 1.06 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 18, ease: "easeOut" }}
+        initial={{ scale: 1 }}
+        animate={{ scale: 1.05 }}
+        transition={{ duration: 60, ease: "easeOut" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/55 via-charcoal/32 to-charcoal" />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/78 via-charcoal/36 to-transparent" />

@@ -1,12 +1,14 @@
 import { motion } from "framer-motion";
-import { ImageReveal, Section } from "../../components/ui";
-import { SceneContainer, SceneContent } from "../../layouts/scene";
+import { Section } from "../../components/ui";
+import { ParallaxImage } from "../../components/image";
+import { SceneContainer, SceneContent, SceneDepth } from "../../layouts/scene";
 import { fadeUp } from "../../motion/fadeUp";
 
 export function Experience() {
   return (
-    <Section id="experience" className="bg-stone text-charcoal" size="sectionXL">
+    <Section id="experience" className="relative text-charcoal" size="sectionXL">
       <SceneContainer className="items-center lg:grid-cols-[0.92fr_1.08fr]">
+        <SceneDepth />
         <SceneContent>
           <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-xs font-semibold uppercase tracking-[0.24em] text-bronze">
             Experience
@@ -22,10 +24,11 @@ export function Experience() {
             AMI Studio is designed as a private wellness scene: warm materials, soft light, quiet pacing and therapists who understand discretion.
           </motion.p>
         </SceneContent>
-        <ImageReveal
+        <ParallaxImage
           src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=82"
           alt="Spa towels and warm wellness interior"
           wrapperClassName="aspect-[4/5] lg:aspect-[5/4]"
+          speed={42}
         />
       </SceneContainer>
     </Section>

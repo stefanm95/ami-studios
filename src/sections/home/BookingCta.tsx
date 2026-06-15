@@ -1,10 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Button, Container, Section } from "../../components/ui";
+import { SceneDepth } from "../../layouts/scene";
 
 export function BookingCta() {
   return (
     <Section id="booking" className="bg-charcoal text-ivory" size="sectionLG">
-      <Container>
+      <Container className="relative overflow-hidden">
+        <SceneDepth />
         <div className="grid gap-8 border border-white/10 p-7 md:grid-cols-[1fr_auto] md:items-center lg:p-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">Booking</p>

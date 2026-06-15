@@ -1,10 +1,12 @@
 import { Container, Section, SectionHeading } from "../../components/ui";
 import { faq } from "../../data/faq";
+import { SceneDepth } from "../../layouts/scene";
 
 export function Faq() {
   return (
-    <Section id="faq" className="bg-stone text-charcoal">
-      <Container>
+    <Section id="faq" className="relative text-charcoal">
+      <Container className="relative overflow-hidden">
+        <SceneDepth />
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading eyebrow="FAQ" title="Everything before your first visit." />
           <div className="divide-y divide-charcoal/10 border-y border-charcoal/10">

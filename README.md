@@ -9,17 +9,21 @@ src/
   app/          app shell and routes
   assets/       static project assets
   components/
+    atmosphere/ global gradient, glow and noise layers
+    image/      parallax image primitives
     ui/         primitive UI grouped by component
   constants/
     tokens/     design tokens
   data/         content layer
   hooks/        reusable hooks
+    useLenis    global smooth scroll
   layouts/
     footer/     footer layout
     navigation/ navbar layout
+    root/       global atmosphere, scroll, nav and footer
     scene/      reusable scene composition
   lib/          utilities
-  motion/       reusable animation variants
+  motion/       reusable animation variants and scroll hooks
   pages/        routed pages
     home/       homepage orchestrator and section registry
     shared/     shared page shells

@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Container, ImageReveal, PriceCard, Section, SectionHeading } from "../../components/ui";
 import { services } from "../../data/services";
-import { SceneGrid } from "../../layouts/scene";
+import { SceneDepth, SceneGrid } from "../../layouts/scene";
 import { fadeUp } from "../../motion/fadeUp";
 import { stagger } from "../../motion/stagger";
 
 export function Services() {
   return (
-    <Section id="services" className="bg-ivory text-charcoal">
-      <Container>
+    <Section id="services" className="relative text-charcoal">
+      <Container className="relative overflow-hidden">
+        <SceneDepth />
         <SectionHeading
           eyebrow="Services"
           title="High-touch rituals, clearly priced."
@@ -16,7 +17,7 @@ export function Services() {
         />
         <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.18 }}>
           <SceneGrid className="mt-12">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <motion.div
               key={service.name}
               variants={fadeUp}

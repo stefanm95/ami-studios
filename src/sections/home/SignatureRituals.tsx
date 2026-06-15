@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, Container, Section, SectionHeading } from "../../components/ui";
+import { SceneDepth } from "../../layouts/scene";
 import { fadeUp } from "../../motion/fadeUp";
 import { stagger } from "../../motion/stagger";
 
@@ -12,8 +13,9 @@ const rituals = [
 
 export function SignatureRituals() {
   return (
-    <Section id="rituals" className="bg-ivory text-charcoal">
-      <Container>
+    <Section id="rituals" className="relative text-charcoal">
+      <Container className="relative overflow-hidden">
+        <SceneDepth />
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <SectionHeading
             eyebrow="Signature Rituals"

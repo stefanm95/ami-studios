@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import { Footer } from "../../layouts/footer";
-import { FloatingNavbar } from "../../layouts/navigation";
 import { Container, Section } from "../../components/ui";
 
 type PageShellProps = {
@@ -17,8 +15,7 @@ export function PageShell({ title, description }: PageShellProps) {
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <FloatingNavbar />
-      <main className="bg-ivory text-charcoal">
+      <main className="text-charcoal">
         <Section className="min-h-[72vh] pt-36">
           <Container>
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-bronze">AMI Studio</p>
@@ -27,7 +24,6 @@ export function PageShell({ title, description }: PageShellProps) {
           </Container>
         </Section>
       </main>
-      <Footer />
     </>
   );
 }
