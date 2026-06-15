@@ -36,7 +36,7 @@ export function FloatingNavbar() {
           "mx-auto flex h-16 max-w-[1320px] items-center justify-between px-4 transition duration-700 sm:px-6",
           "bg-white/8 backdrop-blur-[14px] border border-white/14",
           isScrolled
-            ? "bg-stone-100/90 backdrop-blur-md border-stone-200/30 text-stone-700"
+            ? "bg-stone-900/80 backdrop-blur-md border-stone-700/40 text-white/88"
             : "text-white/88",
         )}
       >
@@ -50,7 +50,7 @@ export function FloatingNavbar() {
         <nav
           className={cn(
             "hidden items-center gap-7 text-xs uppercase tracking-[0.18em] transition lg:flex",
-            isScrolled ? "text-stone-600" : "text-white/72",
+            isScrolled ? "text-white/72" : "text-white/72",
           )}
         >
           {navigation.map((item) => (
@@ -70,7 +70,7 @@ export function FloatingNavbar() {
           className={cn(
             "inline-flex h-10 w-10 items-center justify-center border transition lg:hidden",
             isScrolled
-              ? "border-stone-300 text-stone-700"
+              ? "border-white/25 text-white"
               : "border-white/25 text-white",
           )}
           aria-label="Open menu"

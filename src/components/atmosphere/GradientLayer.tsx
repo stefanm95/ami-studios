@@ -4,7 +4,7 @@ export function GradientLayer() {
       className="absolute inset-0"
       style={{
         background:
-          "radial-gradient(circle at 18% 20%, rgba(230, 226, 220, 0.32), transparent 38%), radial-gradient(circle at 82% 12%, rgba(190, 186, 180, 0.18), transparent 32%), linear-gradient(135deg, rgba(244, 242, 238, 0.88), rgba(200, 196, 190, 0.56) 48%, rgba(235, 232, 228, 0.72))",
+          "radial-gradient(circle at 18% 20%, rgba(80, 75, 70, 0.28), transparent 45%), radial-gradient(circle at 82% 12%, rgba(60, 56, 52, 0.22), transparent 40%), linear-gradient(135deg, rgba(42, 38, 34, 0.95), rgba(70, 64, 58, 0.68) 48%, rgba(55, 50, 45, 0.82))",
       }}
     />
   );

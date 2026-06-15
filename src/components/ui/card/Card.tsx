@@ -10,7 +10,7 @@ export function Card({ className, variant = "default", ...props }: CardProps) {
     <article
       className={cn(
         "border backdrop-blur",
-        variant === "default" && "border-stone-200 bg-stone-50/60 shadow-soft",
+        variant === "default" && "border-stone-700 bg-stone-900/50 shadow-soft",
         variant === "glass" &&
           "border-white/14 bg-white/8 backdrop-blur-[12px] shadow-glow",
         variant === "luxury" &&

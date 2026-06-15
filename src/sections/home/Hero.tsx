@@ -22,10 +22,10 @@ export function Hero() {
         loop
         playsInline
       />
-      {/* Monochrome stone-toned overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#302d2a]/62 via-[#46413d]/32 to-[#625b55]/48" />
-      {/* Subtle vignette */}
-      <div className="absolute inset-0 bg-radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.2) 100%)" />
+      {/* Darker charcoal overlay for strong contrast */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1714]/74 via-[#2a2622]/48 to-[#3d3935]/64" />
+      {/* Strong vignette for editorial effect */}
+      <div className="absolute inset-0 bg-radial-gradient(circle at center, transparent 25%, rgba(0,0,0,0.35) 100%)" />
 
       <div className="relative mx-auto flex min-h-screen max-w-[1440px] flex-col justify-end px-5 pb-14 pt-32 sm:px-8 lg:px-12 lg:pb-20">
         <motion.div

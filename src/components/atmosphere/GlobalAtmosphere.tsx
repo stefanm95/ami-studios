@@ -8,12 +8,12 @@ export function GlobalAtmosphere() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#f4f2ee]"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#2a2622]"
     >
       <GradientLayer />
-      <GlowLayer />
       <StoneTextureLayer />
       <GlassTextureLayer />
+      <GlowLayer />
       <NoiseLayer />
     </div>
   );
