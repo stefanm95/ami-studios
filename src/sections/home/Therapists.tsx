@@ -1,4 +1,4 @@
-import { Card, Container, ImageReveal, Section, SectionHeading } from "../../components/ui";
+import { Container, Section, SectionHeading, TherapistCard } from "../../components/ui";
 import { therapists } from "../../data/therapists";
 
 export function Therapists() {
@@ -12,15 +12,7 @@ export function Therapists() {
         />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {therapists.map((therapist) => (
-            <Card key={therapist.name} className="overflow-hidden">
-              <ImageReveal src={therapist.photo} alt={therapist.name} wrapperClassName="aspect-[4/5]" />
-              <div className="p-6">
-                <h3 className="font-display text-3xl">{therapist.name}</h3>
-                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-bronze">{therapist.role}</p>
-                <p className="mt-4 text-sm font-semibold text-espresso">{therapist.experience}</p>
-                <p className="mt-4 leading-7 text-charcoal/64">{therapist.bio}</p>
-              </div>
-            </Card>
+            <TherapistCard key={therapist.name} {...therapist} />
           ))}
         </div>
       </Container>

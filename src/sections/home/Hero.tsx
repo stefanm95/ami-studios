@@ -10,7 +10,7 @@ const heroVideo =
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen overflow-hidden bg-charcoal text-ivory">
-      <video
+      <motion.video
         className="absolute inset-0 h-full w-full object-cover opacity-58"
         src={heroVideo}
         poster="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=82"
@@ -18,9 +18,18 @@ export function Hero() {
         muted
         loop
         playsInline
+        initial={{ scale: 1.06 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 18, ease: "easeOut" }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/55 via-charcoal/32 to-charcoal" />
       <div className="absolute inset-0 bg-gradient-to-r from-charcoal/78 via-charcoal/36 to-transparent" />
+      <motion.div
+        className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-charcoal via-charcoal/68 to-transparent"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      />
 
       <div className="relative mx-auto flex min-h-screen max-w-[1440px] flex-col justify-end px-5 pb-14 pt-32 sm:px-8 lg:px-12 lg:pb-20">
         <motion.div
@@ -29,8 +38,11 @@ export function Hero() {
           animate="visible"
           className="max-w-5xl"
         >
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.26em] text-gold">AMI Studio Bucharest</p>
-          <h1 className="font-display text-6xl leading-none sm:text-7xl lg:text-9xl" aria-label="EXPERIENCE STILLNESS">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-gold">AMI Studio Bucharest</p>
+          <h1
+            className="font-display text-6xl leading-none tracking-[0.02em] sm:text-7xl lg:text-9xl"
+            aria-label="EXPERIENCE STILLNESS"
+          >
             <RevealText aria-hidden="true">EXPERIENCE</RevealText>
             <RevealText aria-hidden="true">STILLNESS</RevealText>
           </h1>
