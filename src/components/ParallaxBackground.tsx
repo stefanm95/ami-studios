@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useParallax } from "../motion/useParallax";
@@ -8,7 +9,7 @@ type ParallaxBackgroundProps = {
   speed?: number;
 };
 
-export function ParallaxBackground({ className, speed = 90 }: ParallaxBackgroundProps) {
+function ParallaxBackgroundComponent({ className, speed = 90 }: ParallaxBackgroundProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { y, opacity } = useParallax({ target: ref, speed });
 
@@ -21,3 +22,5 @@ export function ParallaxBackground({ className, speed = 90 }: ParallaxBackground
     />
   );
 }
+
+export const ParallaxBackground = memo(ParallaxBackgroundComponent);

@@ -3,7 +3,7 @@ import { therapists } from "../../data/therapists";
 
 export function Therapists() {
   return (
-    <Section id="therapists" className="bg-ivory text-charcoal">
+    <Section id="therapists" className="relative text-charcoal">
       <Container>
         <SectionHeading
           eyebrow="Therapists"
