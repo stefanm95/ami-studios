@@ -1,0 +1,37 @@
+import { motion } from "framer-motion";
+import { Card, Container, Section, SectionHeading } from "../../components/ui";
+import { fadeUp } from "../../motion/fadeUp";
+import { stagger } from "../../motion/stagger";
+
+const rituals = [
+  "Private arrival ritual",
+  "Custom oil selection",
+  "Therapist consultation",
+  "Warm towel finish",
+];
+
+export function SignatureRituals() {
+  return (
+    <Section id="rituals" className="bg-ivory text-charcoal">
+      <Container>
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <SectionHeading
+            eyebrow="Signature Rituals"
+            title="Wellness with the quiet confidence of a private club."
+            copy="Each session is structured around pace, privacy and sensory detail, not a generic treatment menu."
+          />
+          <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid gap-3 sm:grid-cols-2">
+            {rituals.map((ritual) => (
+              <motion.div key={ritual} variants={fadeUp}>
+                <Card className="p-6">
+                  <p className="text-xs uppercase tracking-[0.2em] text-bronze">Included</p>
+                  <h3 className="mt-3 font-display text-3xl">{ritual}</h3>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </Container>
+    </Section>
+  );
+}
