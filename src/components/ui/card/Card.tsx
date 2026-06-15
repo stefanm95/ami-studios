@@ -10,9 +10,11 @@ export function Card({ className, variant = "default", ...props }: CardProps) {
     <article
       className={cn(
         "border backdrop-blur",
-        variant === "default" && "border-charcoal/10 bg-white/72 shadow-soft",
-        variant === "glass" && "border-white/18 bg-white/12 shadow-glow",
-        variant === "luxury" && "border-gold/25 bg-ivory/85 shadow-[0_32px_90px_rgba(21,18,15,0.16)]",
+        variant === "default" && "border-stone-200 bg-stone-50/60 shadow-soft",
+        variant === "glass" &&
+          "border-white/14 bg-white/8 backdrop-blur-[12px] shadow-glow",
+        variant === "luxury" &&
+          "border-white/10 bg-white/6 backdrop-blur-[10px] shadow-[0_24px_72px_rgba(0,0,0,0.08)]",
         className,
       )}
       {...props}

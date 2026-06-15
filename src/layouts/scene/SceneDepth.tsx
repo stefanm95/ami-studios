@@ -14,9 +14,9 @@ export function SceneDepth({
       )}
       {...props}
     >
-      {/* Minimal subtle depth accents - low opacity, soft blur */}
-      <div className="absolute left-[10%] top-[12%] h-56 w-56 rounded-full bg-[#f5e7d4]/06 blur-[120px]" />
-      <div className="absolute bottom-[12%] right-[8%] h-64 w-64 rounded-full bg-[#d7c3a5]/08 blur-[100px]" />
+      {/* Minimal subtle stone-toned depth accents - low opacity, soft blur */}
+      <div className="absolute left-[10%] top-[12%] h-56 w-56 rounded-full bg-[#aaa197]/04 blur-[120px]" />
+      <div className="absolute bottom-[12%] right-[8%] h-64 w-64 rounded-full bg-[#625b55]/05 blur-[100px]" />
       {children}
     </div>
   );
