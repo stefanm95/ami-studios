@@ -1,4 +1,9 @@
-import { Container, Section, SectionHeading, TherapistCard } from "../../components/ui";
+import {
+  Container,
+  Section,
+  SectionHeading,
+  TherapistCard,
+} from "../../components/ui";
 import { therapists } from "../../data/therapists";
 
 export function Therapists() {

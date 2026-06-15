@@ -1,6 +1,5 @@
-import { memo } from "react";
 import { motion, type HTMLMotionProps } from "framer-motion";
-import { useRef } from "react";
+import { memo, useRef } from "react";
 import { cn } from "../../lib/cn";
 import { useParallax } from "../../motion/useParallax";
 
@@ -9,7 +8,13 @@ type ParallaxImageProps = HTMLMotionProps<"img"> & {
   speed?: number;
 };
 
-function ParallaxImageComponent({ wrapperClassName, className, speed = 40, alt, ...props }: ParallaxImageProps) {
+function ParallaxImageComponent({
+  wrapperClassName,
+  className,
+  speed = 40,
+  alt,
+  ...props
+}: ParallaxImageProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { y, scale, opacity } = useParallax({ target: ref, speed });
 

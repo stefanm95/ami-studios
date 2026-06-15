@@ -10,7 +10,10 @@ export function GlowLayer() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       {glows.map((glow) => (
-        <div key={glow} className={`absolute rounded-full opacity-[0.08] blur-[160px] ${glow}`} />
+        <div
+          key={glow}
+          className={`absolute rounded-full opacity-[0.08] blur-[160px] ${glow}`}
+        />
       ))}
     </div>
   );

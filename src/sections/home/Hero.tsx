@@ -9,7 +9,10 @@ const heroVideo =
 
 export function Hero() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden text-ivory">
+    <section
+      id="home"
+      className="relative min-h-screen overflow-hidden text-ivory"
+    >
       <video
         className="absolute inset-0 h-full w-full object-cover opacity-48"
         src={heroVideo}
@@ -29,7 +32,9 @@ export function Hero() {
           animate="visible"
           className="max-w-5xl"
         >
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-gold">AMI Studio Bucharest</p>
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-gold">
+            AMI Studio Bucharest
+          </p>
           <h1
             className="font-display text-6xl leading-none tracking-[0.02em] sm:text-7xl lg:text-9xl"
             aria-label="EXPERIENCE STILLNESS"
@@ -37,14 +42,23 @@ export function Hero() {
             <RevealText aria-hidden="true">EXPERIENCE</RevealText>
             <RevealText aria-hidden="true">STILLNESS</RevealText>
           </h1>
-          <motion.p variants={fadeIn} className="mt-7 max-w-2xl text-lg leading-8 text-ivory/78 md:text-xl md:leading-9">
+          <motion.p
+            variants={fadeIn}
+            className="mt-7 max-w-2xl text-lg leading-8 text-ivory/78 md:text-xl md:leading-9"
+          >
             Luxury massage rituals crafted for body and mind.
           </motion.p>
-          <motion.div variants={fadeIn} className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <motion.div
+            variants={fadeIn}
+            className="mt-9 flex flex-col gap-3 sm:flex-row"
+          >
             <Button>
               Book a Session <ArrowRight size={17} />
             </Button>
-            <Button variant="secondary" className="border-white/25 bg-white/10 text-ivory hover:bg-white/15">
+            <Button
+              variant="secondary"
+              className="border-white/25 bg-white/10 text-ivory hover:bg-white/15"
+            >
               Explore Rituals
             </Button>
           </motion.div>

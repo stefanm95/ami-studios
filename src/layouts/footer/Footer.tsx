@@ -9,7 +9,9 @@ export function Footer() {
         <Divider className="bg-charcoal/10" />
         <div className="grid gap-8 pt-8 md:grid-cols-[1fr_auto_auto] md:items-start">
           <div>
-            <p className="font-display text-5xl uppercase tracking-[0.08em]">AMI STUDIOS</p>
+            <p className="font-display text-5xl uppercase tracking-[0.08em]">
+              AMI STUDIOS
+            </p>
             <p className="mt-3 max-w-sm text-sm leading-6 text-charcoal/60">
               Luxury massage rituals crafted for body and mind.
             </p>
