@@ -27,11 +27,11 @@ export function Experience() {
             viewport={{ once: true }}
             className="mt-5 font-display text-5xl leading-none text-white md:text-7xl"
           >
-            Quiet setup.
+            Private booking.
             <br />
-            Precise treatment.
+            Quiet arrival.
             <br />
-            Complete discretion.
+            Personal pace.
           </motion.h2>
           <motion.p
             variants={fadeUp}
@@ -40,8 +40,8 @@ export function Experience() {
             viewport={{ once: true }}
             className="mt-7 max-w-xl text-lg leading-8 text-stone-200/75"
           >
-            Every appointment is prepared for the environment: room, timing,
-            pressure, privacy and departure.
+            Each appointment is arranged around the setting: confirmation,
+            arrival, room atmosphere, personal pace and discreet departure.
           </motion.p>
         </SceneContent>
         <ParallaxImage

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Button, RevealText } from "../../components/ui";
+import { RevealText } from "../../components/ui";
 import { brandAssets } from "../../data/assets";
 import { fadeIn } from "../../motion/fadeIn";
 import { stagger } from "../../motion/stagger";
@@ -42,18 +41,13 @@ export function Hero() {
           variants={stagger}
           initial="hidden"
           animate="visible"
-          className="max-w-5xl"
+          className="max-w-4xl"
         >
-          <img
-            src={brandAssets.logo}
-            alt="AMI Studios"
-            className="mb-8 h-auto w-full max-w-[520px] opacity-95"
-          />
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-white/72">
-            Home | Hotel | Office | Yacht
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.32em] text-white/72">
+            HOME | HOTEL | OFFICE | YACHT
           </p>
           <h1
-            className="font-display text-6xl leading-none tracking-[0.02em] text-white sm:text-7xl lg:text-9xl"
+            className="font-display text-[clamp(3.4rem,13vw,8.75rem)] leading-none tracking-[0.02em] text-white"
             aria-label="EXPERIENCE STILLNESS"
           >
             <RevealText aria-hidden="true">EXPERIENCE</RevealText>
@@ -61,24 +55,26 @@ export function Hero() {
           </h1>
           <motion.p
             variants={fadeIn}
-            className="mt-7 max-w-2xl text-lg leading-8 text-white/68 md:text-xl md:leading-9"
+            className="mt-7 max-w-xl text-lg leading-8 text-white/70 md:text-xl md:leading-9"
           >
-            Premium massage services delivered with discretion, precision and
-            calm.
+            Premium massage services, composed for private settings.
           </motion.p>
           <motion.div
             variants={fadeIn}
-            className="mt-9 flex flex-col gap-3 sm:flex-row"
+            className="mt-10 flex flex-col gap-3 sm:flex-row"
           >
-            <Button>
-              Book a Session <ArrowRight size={17} />
-            </Button>
-            <Button
-              variant="secondary"
-              className="border-white/20 bg-white/8 text-white hover:bg-white/12"
+            <a
+              href="#booking"
+              className="inline-flex min-h-12 min-w-[220px] items-center justify-center border border-white/26 bg-white/[0.08] px-7 text-center text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white transition duration-300 hover:border-white/40 hover:bg-white/[0.13]"
             >
-              Explore Rituals
-            </Button>
+              Request appointment
+            </a>
+            <a
+              href="#services"
+              className="inline-flex min-h-12 min-w-[190px] items-center justify-center border border-white/14 px-7 text-center text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-white/78 transition duration-300 hover:border-white/28 hover:bg-white/[0.05] hover:text-white"
+            >
+              Explore services
+            </a>
           </motion.div>
         </motion.div>
       </div>

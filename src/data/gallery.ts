@@ -4,32 +4,32 @@ import type { GalleryItem } from "../types/content";
 export const gallery: GalleryItem[] = [
   {
     title: "Ribbed glass",
-    category: "Glass",
+    category: "Private light",
     image: brandAssets.sections.gallery[0],
   },
   {
     title: "Dark stone",
-    category: "Stone",
+    category: "Material",
     image: brandAssets.sections.gallery[1],
   },
   {
-    title: "Private room",
-    category: "Studio",
+    title: "Quiet room",
+    category: "Setting",
     image: brandAssets.sections.gallery[2],
   },
   {
     title: "Monochrome texture",
-    category: "Stones",
+    category: "Surface",
     image: brandAssets.sections.gallery[3],
   },
   {
-    title: "Basalt calm",
-    category: "Ritual",
+    title: "Basalt detail",
+    category: "Detail",
     image: brandAssets.sections.gallery[4],
   },
   {
     title: "AMI Studios",
-    category: "Brand",
+    category: "Discretion",
     image: brandAssets.sections.gallery[5],
   },
 ];

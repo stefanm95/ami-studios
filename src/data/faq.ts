@@ -2,19 +2,23 @@ import type { FaqItem } from "../types/content";
 
 export const faq: FaqItem[] = [
   {
-    question: "Do I need to choose a ritual before booking?",
-    answer: "No. You can book a time and we will recommend the right treatment after a short consultation.",
+    question: "Is the appointment private?",
+    answer: "Yes. AMI Studios works by private appointment only. Timing, location and arrival details are confirmed directly before the booking.",
   },
   {
-    question: "Are hotel or private residence sessions available?",
-    answer: "Yes. Selected therapists can travel for VIP sessions with advance confirmation.",
+    question: "Do you offer hotel visits?",
+    answer: "Yes. Hotel suite appointments are available with advance confirmation and clear arrival instructions.",
   },
   {
-    question: "How early should I arrive?",
-    answer: "Please arrive 10 minutes before your appointment so the ritual can begin without rush.",
+    question: "Can I book at home, office or yacht?",
+    answer: "Yes. Appointments can be arranged for private residences, offices and yachts when the setting allows a quiet, prepared room.",
   },
   {
-    question: "Can sessions be customized?",
-    answer: "Yes. Pressure, focus areas, oils and room atmosphere are adjusted for each client.",
+    question: "How is discretion handled?",
+    answer: "Communication is kept direct and minimal. Arrival, setup and departure are handled quietly, with respect for the location and schedule.",
+  },
+  {
+    question: "How do I request an appointment?",
+    answer: "Use the request button and share your preferred time, location and appointment type. We confirm availability before anything is scheduled.",
   },
 ];

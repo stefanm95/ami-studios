@@ -11,9 +11,9 @@ export function Therapists() {
     <Section id="therapists" className="relative text-white">
       <Container>
         <SectionHeading
-          eyebrow="Therapists"
-          title="Calm experts with refined technique."
-          copy="Profiles are data-driven and ready for Sanity later."
+          eyebrow="Practitioners"
+          title="Selected for technique, presence and discretion."
+          copy="Appointments are handled by professionals accustomed to private rooms, hotel schedules and direct client communication."
         />
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {therapists.map((therapist) => (

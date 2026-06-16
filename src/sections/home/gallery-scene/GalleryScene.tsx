@@ -9,8 +9,8 @@ export function GalleryScene() {
         <SceneDepth />
         <SectionHeading
           eyebrow="Gallery"
-          title="Stone, smoked glass and private rooms."
-          copy="A restrained visual moodboard for the AMI Studios atmosphere."
+          title="Stone, smoked glass and quiet private settings."
+          copy="A restrained moodboard for the material language and after-dark atmosphere of AMI Studios."
         />
         <GalleryGrid />
       </Container>

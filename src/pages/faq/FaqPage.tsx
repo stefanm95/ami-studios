@@ -1,5 +1,5 @@
 import { PageShell } from "../shared/PageShell";
 
 export function FaqPage() {
-  return <PageShell title="FAQ" description="A dedicated FAQ page prepared for booking, arrival and treatment questions." />;
+  return <PageShell title="FAQ" description="Practical details for private appointments, hotel visits, arrival and discretion." />;
 }

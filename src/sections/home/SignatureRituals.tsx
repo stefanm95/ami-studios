@@ -5,10 +5,10 @@ import { fadeUp } from "../../motion/fadeUp";
 import { stagger } from "../../motion/stagger";
 
 const rituals = [
-  "Private arrival protocol",
-  "Residence-ready setup",
-  "Therapist consultation",
-  "Discreet aftercare",
+  "Private appointment flow",
+  "Room preparation",
+  "Personal pace notes",
+  "Quiet departure",
 ];
 
 export function SignatureRituals() {
@@ -18,9 +18,9 @@ export function SignatureRituals() {
         <SceneDepth />
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <SectionHeading
-            eyebrow="Signature Rituals"
-            title="Massage services composed for private settings."
-            copy="AMI Studios delivers calm, professional treatments at home, hotel, office and yacht."
+            eyebrow="Private Details"
+            title="Appointments composed around the room, the hour and the client."
+            copy="AMI Studios arranges refined massage appointments at home, hotel, office and yacht with direct communication and quiet presence."
           />
           <motion.div
             variants={stagger}
@@ -33,7 +33,7 @@ export function SignatureRituals() {
               <motion.div key={ritual} variants={fadeUp}>
                 <Card className="p-6">
                   <p className="text-xs uppercase tracking-[0.2em] text-champagne">
-                    Included
+                    Arranged
                   </p>
                   <h3 className="mt-3 font-display text-3xl text-white">
                     {ritual}

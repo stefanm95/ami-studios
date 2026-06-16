@@ -13,7 +13,7 @@ export function Footer() {
               AMI STUDIOS
             </p>
             <p className="mt-3 max-w-sm text-sm leading-6 text-stone-200/70">
-              Premium massage services for home, hotel, office and yacht.
+              Private massage appointments for home, hotel, office and yacht.
             </p>
           </div>
           <div className="text-sm leading-7 text-stone-200/75">
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-10 text-xs uppercase tracking-[0.18em] text-stone-200/50">
-          Copyright 2026 AMI Studio. All rights reserved.
+          Copyright 2026 AMI Studios. Private appointments only.
         </p>
       </div>
     </footer>

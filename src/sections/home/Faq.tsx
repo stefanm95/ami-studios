@@ -10,7 +10,7 @@ export function Faq() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <SectionHeading
             eyebrow="FAQ"
-            title="Everything before your first visit."
+            title="Before requesting an appointment."
           />
           <div className="divide-y divide-white/10 border-y border-white/10">
             {faq.map((item) => (

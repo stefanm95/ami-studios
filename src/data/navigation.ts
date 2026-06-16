@@ -1,7 +1,6 @@
 export const navigation = [
-  { label: "Rituals", href: "#rituals" },
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
   { label: "Experience", href: "#experience" },
-  { label: "Therapists", href: "#therapists" },
-  { label: "Gallery", href: "#gallery" },
   { label: "FAQ", href: "#faq" },
 ];

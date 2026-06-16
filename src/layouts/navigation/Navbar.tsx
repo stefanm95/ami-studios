@@ -1,6 +1,6 @@
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "../../components/ui";
+import { brandAssets } from "../../data/assets";
 import { navigation } from "../../data/navigation";
 import { cn } from "../../lib/cn";
 
@@ -32,26 +32,29 @@ export function FloatingNavbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-4 z-50 px-4 sm:px-6">
+    <header className="fixed inset-x-0 top-5 z-50 px-4 sm:px-6">
       <div
         className={cn(
-          "mx-auto flex h-16 max-w-[1320px] items-center justify-between px-4 transition duration-700 sm:px-6",
-          "bg-black/24 border border-white/14",
+          "mx-auto flex h-20 max-w-[1440px] items-center justify-between border px-5 transition duration-700 sm:px-7 lg:px-9",
           isScrolled
-            ? "bg-stone-950/88 border-stone-700/40 text-white/88"
-            : "text-white/88",
+            ? "border-white/12 bg-black/46 text-white/88 shadow-[0_16px_50px_rgba(0,0,0,0.22)]"
+            : "border-white/8 bg-black/[0.08] text-white/88",
         )}
       >
         <a
           href="#home"
-          className="font-display text-2xl font-light tracking-tight"
-          aria-label="AMI Studio home"
+          className="flex items-center"
+          aria-label="AMI Studios home"
         >
-          AMI Studio
+          <img
+            src={brandAssets.logo}
+            alt="AMI Studios"
+            className="h-auto w-[132px] opacity-95 sm:w-[154px]"
+          />
         </a>
         <nav
           className={cn(
-            "hidden items-center gap-7 text-xs uppercase tracking-[0.18em] transition lg:flex",
+            "absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 text-[0.68rem] uppercase tracking-[0.22em] transition lg:flex",
             isScrolled ? "text-white/72" : "text-white/72",
           )}
         >
@@ -65,12 +68,15 @@ export function FloatingNavbar() {
             </a>
           ))}
         </nav>
-        <div className="hidden lg:block">
-          <Button>Book</Button>
-        </div>
+        <a
+          href="#booking"
+          className="hidden min-w-[198px] items-center justify-center border border-white/20 px-6 py-3 text-center text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/82 transition duration-300 hover:border-white/36 hover:bg-white/[0.07] hover:text-white lg:inline-flex"
+        >
+          Request appointment
+        </a>
         <button
           className={cn(
-            "inline-flex h-10 w-10 items-center justify-center border transition lg:hidden",
+            "inline-flex h-11 w-11 items-center justify-center border bg-white/[0.03] transition lg:hidden",
             isScrolled
               ? "border-white/25 text-white"
               : "border-white/25 text-white",

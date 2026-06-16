@@ -5,10 +5,10 @@ export function HomePage() {
   return (
     <>
       <Helmet>
-        <title>AMI Studio | Luxury Massage Rituals</title>
+        <title>AMI Studios | Private Massage Appointments</title>
         <meta
           name="description"
-          content="Luxury massage rituals in Bucharest crafted for body and mind. Explore AMI Studio services, therapists and private wellness experiences."
+          content="Private massage appointments in Bucharest for home, hotel, office and yacht. Discreet scheduling, refined technique and composed rooms."
         />
       </Helmet>
       <main>

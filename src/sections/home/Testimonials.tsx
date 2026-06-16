@@ -14,7 +14,7 @@ export function Testimonials() {
         <SceneDepth />
         <SectionHeading
           eyebrow="Testimonials"
-          title="Trusted by clients who value discretion."
+          title="Notes from clients who value privacy."
         />
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
