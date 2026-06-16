@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button, RevealText } from "../../components/ui";
+import { brandAssets } from "../../data/assets";
 import { fadeIn } from "../../motion/fadeIn";
 import { stagger } from "../../motion/stagger";
-
-const heroVideo =
-  "https://videos.pexels.com/video-files/6620166/6620166-uhd_2560_1440_25fps.mp4";
 
 export function Hero() {
   return (
@@ -15,17 +13,29 @@ export function Hero() {
     >
       <video
         className="absolute inset-0 h-full w-full object-cover opacity-40"
-        src={heroVideo}
-        poster="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=82"
+        src={brandAssets.hero.video}
+        poster={brandAssets.hero.fallbackImage}
         autoPlay
         muted
         loop
         playsInline
       />
+      <img
+        aria-hidden="true"
+        src={brandAssets.hero.overlayTexture}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.12] mix-blend-screen"
+      />
       {/* Darker charcoal overlay for strong contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1a1714]/74 via-[#2a2622]/48 to-[#3d3935]/64" />
       {/* Strong vignette for editorial effect */}
-      <div className="absolute inset-0 bg-radial-gradient(circle at center, transparent 25%, rgba(0,0,0,0.35) 100%)" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at center, transparent 24%, rgba(0,0,0,0.42) 100%)",
+        }}
+      />
 
       <div className="relative mx-auto flex min-h-screen max-w-[1440px] flex-col justify-end px-5 pb-14 pt-32 sm:px-8 lg:px-12 lg:pb-20">
         <motion.div
@@ -34,8 +44,13 @@ export function Hero() {
           animate="visible"
           className="max-w-5xl"
         >
+          <img
+            src={brandAssets.logo}
+            alt="AMI Studios"
+            className="mb-8 h-auto w-full max-w-[520px] opacity-95"
+          />
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-white/72">
-            AMI Studio Bucharest
+            Home | Hotel | Office | Yacht
           </p>
           <h1
             className="font-display text-6xl leading-none tracking-[0.02em] text-white sm:text-7xl lg:text-9xl"
@@ -48,7 +63,8 @@ export function Hero() {
             variants={fadeIn}
             className="mt-7 max-w-2xl text-lg leading-8 text-white/68 md:text-xl md:leading-9"
           >
-            Luxury massage rituals crafted for body and mind.
+            Premium massage services delivered with discretion, precision and
+            calm.
           </motion.p>
           <motion.div
             variants={fadeIn}

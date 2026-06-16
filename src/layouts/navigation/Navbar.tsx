@@ -9,21 +9,23 @@ export function FloatingNavbar() {
 
   useEffect(() => {
     let ticking = false;
-    let lastScrollY = 0;
+    let currentState = window.scrollY > 48;
 
     const handleScroll = () => {
-      lastScrollY = window.scrollY;
-
       if (!ticking) {
         requestAnimationFrame(() => {
-          setIsScrolled(lastScrollY > 48);
+          const nextState = window.scrollY > 48;
+          if (nextState !== currentState) {
+            currentState = nextState;
+            setIsScrolled(nextState);
+          }
           ticking = false;
         });
         ticking = true;
       }
     };
 
-    handleScroll();
+    setIsScrolled(currentState);
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -34,9 +36,9 @@ export function FloatingNavbar() {
       <div
         className={cn(
           "mx-auto flex h-16 max-w-[1320px] items-center justify-between px-4 transition duration-700 sm:px-6",
-          "bg-white/8 backdrop-blur-[14px] border border-white/14",
+          "bg-black/24 border border-white/14",
           isScrolled
-            ? "bg-stone-900/80 backdrop-blur-md border-stone-700/40 text-white/88"
+            ? "bg-stone-950/88 border-stone-700/40 text-white/88"
             : "text-white/88",
         )}
       >

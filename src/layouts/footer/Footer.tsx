@@ -13,7 +13,7 @@ export function Footer() {
               AMI STUDIOS
             </p>
             <p className="mt-3 max-w-sm text-sm leading-6 text-stone-200/70">
-              Luxury massage rituals crafted for body and mind.
+              Premium massage services for home, hotel, office and yacht.
             </p>
           </div>
           <div className="text-sm leading-7 text-stone-200/75">

@@ -10,7 +10,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42",
     "@vitejs/plugin-react": "^5.0.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",

@@ -18,8 +18,8 @@ export function Services() {
         <SceneDepth />
         <SectionHeading
           eyebrow="Services"
-          title="High-touch rituals, clearly priced."
-          copy="Large editorial cards built for the main services scene and ready to become a dedicated Services page later."
+          title="Premium massage, wherever the appointment needs to happen."
+          copy="Treatments are structured for private residences, hotel suites, executive offices and yacht schedules."
         />
         <motion.div
           variants={stagger}

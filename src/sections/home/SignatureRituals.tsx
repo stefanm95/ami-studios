@@ -5,10 +5,10 @@ import { fadeUp } from "../../motion/fadeUp";
 import { stagger } from "../../motion/stagger";
 
 const rituals = [
-  "Private arrival ritual",
-  "Custom oil selection",
+  "Private arrival protocol",
+  "Residence-ready setup",
   "Therapist consultation",
-  "Warm towel finish",
+  "Discreet aftercare",
 ];
 
 export function SignatureRituals() {
@@ -19,8 +19,8 @@ export function SignatureRituals() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <SectionHeading
             eyebrow="Signature Rituals"
-            title="Wellness with the quiet confidence of a private club."
-            copy="Each session is structured around pace, privacy and sensory detail, not a generic treatment menu."
+            title="Massage services composed for private settings."
+            copy="AMI Studios delivers calm, professional treatments at home, hotel, office and yacht."
           />
           <motion.div
             variants={stagger}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ParallaxImage } from "../../components/image";
 import { Section } from "../../components/ui";
+import { brandAssets } from "../../data/assets";
 import { SceneContainer, SceneContent, SceneDepth } from "../../layouts/scene";
 import { fadeUp } from "../../motion/fadeUp";
 
@@ -26,11 +27,11 @@ export function Experience() {
             viewport={{ once: true }}
             className="mt-5 font-display text-5xl leading-none text-white md:text-7xl"
           >
-            Restore body.
+            Quiet setup.
             <br />
-            Calm the mind.
+            Precise treatment.
             <br />
-            Reconnect with yourself.
+            Complete discretion.
           </motion.h2>
           <motion.p
             variants={fadeUp}
@@ -39,13 +40,13 @@ export function Experience() {
             viewport={{ once: true }}
             className="mt-7 max-w-xl text-lg leading-8 text-stone-200/75"
           >
-            AMI Studio is designed as a private wellness scene: warm materials,
-            soft light, quiet pacing and therapists who understand discretion.
+            Every appointment is prepared for the environment: room, timing,
+            pressure, privacy and departure.
           </motion.p>
         </SceneContent>
         <ParallaxImage
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=82"
-          alt="Spa towels and warm wellness interior"
+          src={brandAssets.sections.experience}
+          alt="AMI Studios private massage room"
           wrapperClassName="aspect-[4/5] lg:aspect-[5/4]"
           speed={42}
         />

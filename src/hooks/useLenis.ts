@@ -3,6 +3,10 @@ import { useEffect } from "react";
 
 export function useLenis() {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return undefined;
+    }
+
     const lenis = new Lenis({
       duration: 1.8,
       smoothWheel: true,
