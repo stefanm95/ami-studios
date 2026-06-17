@@ -14,9 +14,13 @@ export function SceneDepth({
       )}
       {...props}
     >
-      {/* Minimal subtle charcoal depth accents - very low opacity, soft blur */}
-      <div className="absolute left-[10%] top-[12%] h-56 w-56 rounded-full bg-[#5a5248]/08 blur-[120px]" />
-      <div className="absolute bottom-[12%] right-[8%] h-64 w-64 rounded-full bg-[#474238]/06 blur-[100px]" />
+      <div
+        className="absolute inset-0 opacity-60"
+        style={{
+          background:
+            "radial-gradient(circle at 12% 18%, rgba(138,112,82,0.035), transparent 34%), radial-gradient(circle at 88% 74%, rgba(255,255,255,0.018), transparent 30%)",
+        }}
+      />
       {children}
     </div>
   );

@@ -3,19 +3,15 @@ import type { FaqItem } from "../types/content";
 export const faq: FaqItem[] = [
   {
     question: "What kind of appointment is this?",
-    answer: "AMI Studios arranges private erotic massage appointments in refined settings, with clear boundaries, discretion and direct coordination.",
+    answer: "AMI Studios arranges private massage appointments in refined settings, with discretion, clear conduct and direct coordination.",
   },
   {
     question: "Is the appointment private?",
     answer: "Yes. AMI Studios works by private appointment only. Timing, location and arrival details are confirmed directly before the booking.",
   },
   {
-    question: "Do you offer hotel visits?",
-    answer: "Yes. Hotel suite appointments are available with advance confirmation and clear arrival instructions.",
-  },
-  {
-    question: "Can I book at home, office or yacht?",
-    answer: "Yes. Appointments can be arranged for private residences, offices and yachts when the setting allows a quiet, prepared room.",
+    question: "Can I book at a hotel, office or yacht?",
+    answer: "Yes. Hotel suites, private residences, offices and yachts can be considered when the setting allows a quiet, prepared room.",
   },
   {
     question: "How is discretion handled?",
@@ -23,6 +19,14 @@ export const faq: FaqItem[] = [
   },
   {
     question: "How do I request an appointment?",
-    answer: "Use the request button and share your preferred time, location and appointment type. Every request is handled in confidence before anything is scheduled.",
+    answer: "Use the request button and share your preferred time, location and appointment type. Details are confirmed privately before anything is scheduled.",
+  },
+  {
+    question: "What should I prepare before arrival?",
+    answer: "A clean private room, warm lighting, enough time and a discreet arrival path are usually enough.",
+  },
+  {
+    question: "How are boundaries handled?",
+    answer: "Every appointment follows clear conduct, mutual respect and the details confirmed before arrival.",
   },
 ];

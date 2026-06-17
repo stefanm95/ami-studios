@@ -44,7 +44,6 @@ export function BookingModal({ mode, onClose }: BookingModalProps) {
       style={{
         background:
           "radial-gradient(circle at 50% 20%, rgba(120,110,95,0.16), transparent 42%), rgba(8, 7, 6, 0.78)",
-        backdropFilter: "blur(3px)",
       }}
     >
       <div
@@ -59,7 +58,7 @@ export function BookingModal({ mode, onClose }: BookingModalProps) {
             "linear-gradient(135deg, rgba(38,34,30,0.98), rgba(18,16,14,0.97))",
           border: "1px solid rgba(255, 255, 255, 0.16)",
           boxShadow:
-            "0 40px 120px rgba(0,0,0,0.58), inset 0 1px 0 rgba(255,255,255,0.08)",
+            "0 24px 70px rgba(0,0,0,0.46), inset 0 1px 0 rgba(255,255,255,0.08)",
         }}
       >
         <img
@@ -80,7 +79,7 @@ export function BookingModal({ mode, onClose }: BookingModalProps) {
           aria-hidden="true"
           className="pointer-events-none absolute inset-0"
           style={{
-            boxShadow: "inset 0 0 90px rgba(0,0,0,0.46)",
+            boxShadow: "inset 0 0 60px rgba(0,0,0,0.34)",
           }}
         />
         <div className="relative z-10 flex min-h-0 flex-1 flex-col">

@@ -8,7 +8,7 @@ export function GlobalAtmosphere() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#2a2622]"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#0f0e0c]"
     >
       <GradientLayer />
       <StoneTextureLayer />

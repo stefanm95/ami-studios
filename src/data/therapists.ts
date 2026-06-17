@@ -7,7 +7,7 @@ export const therapists: Therapist[] = [
     role: "Private Appointment Lead",
     experience: "9 years experience",
     bio: "Known for measured pressure, quiet presence and precise room etiquette.",
-    photo: brandAssets.textures.glass,
+    photo: brandAssets.textures.stoneSecondary,
   },
   {
     name: "Elena Varga",

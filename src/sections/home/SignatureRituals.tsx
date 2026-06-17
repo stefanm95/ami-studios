@@ -29,7 +29,7 @@ const panels: CtaPanel[] = [
     title: "Gift a private experience.",
     copy: "Arrange a refined appointment gift with discreet coordination and flexible timing.",
     cta: "SEND A GIFT",
-    image: brandAssets.textures.glassSecondary,
+    image: brandAssets.textures.stonePrimary,
   },
 ];
 

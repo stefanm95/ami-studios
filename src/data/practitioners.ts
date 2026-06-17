@@ -36,7 +36,7 @@ export const practitioners: Practitioner[] = [
     id: "iris",
     name: "Iris",
     role: "Residence and yacht practitioner",
-    image: brandAssets.textures.glassSecondary,
+    image: brandAssets.textures.stoneSecondary,
     tone: "Discreet coordination, calm timing, precise room etiquette.",
     description:
       "A polished approach for private residences, yacht schedules and settings that require quiet coordination.",

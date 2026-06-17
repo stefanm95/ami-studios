@@ -17,8 +17,12 @@ export function BookingCta() {
               Requested in confidence
             </p>
             <h2 className="mt-4 font-display text-5xl leading-tight md:text-7xl text-white">
-              Request a private erotic massage appointment.
+              Arrange a private appointment.
             </h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-stone-200/70">
+              Appointments are arranged discreetly, with timing, setting and
+              comfort confirmed before arrival.
+            </p>
           </div>
           <button
             type="button"
