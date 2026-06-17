@@ -23,7 +23,7 @@ export function Hero() {
         aria-hidden="true"
         src={brandAssets.hero.overlayTexture}
         alt=""
-        className="absolute inset-0 h-full w-full object-cover opacity-[0.12] mix-blend-screen"
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.04] mix-blend-screen"
       />
       {/* Darker charcoal overlay for strong contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#1a1714]/74 via-[#2a2622]/48 to-[#3d3935]/64" />
@@ -57,7 +57,7 @@ export function Hero() {
             variants={fadeIn}
             className="mt-7 max-w-xl text-lg leading-8 text-white/70 md:text-xl md:leading-9"
           >
-            Premium massage services, composed for private settings.
+            Private erotic massage appointments, composed for intimate settings.
           </motion.p>
           <motion.div
             variants={fadeIn}

@@ -4,7 +4,7 @@ import { brandAssets } from "../../data/assets";
 export function GlassTextureLayer() {
   return (
     <div
-      className="absolute inset-0 opacity-[0.035] mix-blend-screen"
+      className="absolute inset-0 opacity-[0.0070] mix-blend-screen"
       style={{
         backgroundImage: `url('${brandAssets.textures.glass}')`,
         backgroundSize: "cover",

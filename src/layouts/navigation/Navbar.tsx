@@ -53,16 +53,28 @@ export function FloatingNavbar() {
           />
         </a>
         <nav
-          className={cn(
-            "absolute left-1/2 hidden -translate-x-1/2 items-center gap-10 text-[0.68rem] uppercase tracking-[0.22em] transition lg:flex",
-            isScrolled ? "text-white/72" : "text-white/72",
-          )}
+          className="
+            absolute left-1/2 hidden -translate-x-1/2 items-center gap-10
+            text-[0.68rem] uppercase tracking-[0.22em]
+            text-white
+            transition
+            lg:flex
+          "
         >
           {navigation.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="transition hover:text-white/100"
+              className="
+                relative px-1 py-2
+                text-white
+                transition-colors duration-300
+                hover:text-[#d4c4a8]
+                after:absolute after:bottom-0 after:left-0 after:h-px after:w-0
+                after:bg-[#d4c4a8]
+                after:transition-all after:duration-300
+                hover:after:w-full
+              "
             >
               {item.label}
             </a>
@@ -70,7 +82,17 @@ export function FloatingNavbar() {
         </nav>
         <a
           href="#booking"
-          className="hidden min-w-[198px] items-center justify-center border border-white/20 px-6 py-3 text-center text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-white/82 transition duration-300 hover:border-white/36 hover:bg-white/[0.07] hover:text-white lg:inline-flex"
+          className="
+            hidden min-w-[220px] items-center justify-center
+            border border-white/32
+            bg-black/20
+            px-7 py-3.5
+            text-center text-[0.65rem] font-semibold uppercase tracking-[0.22em]
+            text-white
+            transition duration-300
+            hover:border-white/70 hover:bg-white/[0.03] hover:text-stone-950
+            lg:inline-flex
+          "
         >
           Request appointment
         </a>

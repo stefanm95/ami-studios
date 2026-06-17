@@ -9,6 +9,7 @@ export const brandAssets = {
     stoneSecondary: `${base}/gray-stone-texture.jpg`,
     stoneFine: `${base}/natural-stone-texture-photo-natural-texture-natural-stone_673198-43265.jpg`,
     glass: `${base}/ambitious-studio-rick-barrett-jNOUEeCVKe4-unsplash.jpg`,
+    glassSecondary: `${base}/anh-tuan-to--eY5FLlfMDA-unsplash.jpg`,
     smoke: `${base}/sherzod-gulomov-npE_I2GzpHY-unsplash.jpg`,
     noise: `${base}/abstract-wall-stone-texture_17005-1923(1).jpg`,
   },

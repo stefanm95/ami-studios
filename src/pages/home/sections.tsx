@@ -2,12 +2,10 @@ import {
   BookingCta,
   Experience,
   Faq,
-  Gallery,
   Hero,
   Services,
   SignatureRituals,
   Testimonials,
-  Therapists,
 } from "../../sections/home";
 
 export const homeSections = [
@@ -15,8 +13,6 @@ export const homeSections = [
   SignatureRituals,
   Services,
   Experience,
-  Therapists,
-  Gallery,
   Testimonials,
   Faq,
   BookingCta,

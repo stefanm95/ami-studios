@@ -15,6 +15,16 @@ export type Therapist = {
   photo: string;
 };
 
+export type Practitioner = {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  tone: string;
+  description: string;
+  details: string[];
+};
+
 export type Testimonial = {
   quote: string;
   name: string;

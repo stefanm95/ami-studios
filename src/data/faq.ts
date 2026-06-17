@@ -2,6 +2,10 @@ import type { FaqItem } from "../types/content";
 
 export const faq: FaqItem[] = [
   {
+    question: "What kind of appointment is this?",
+    answer: "AMI Studios arranges private erotic massage appointments in refined settings, with clear boundaries, discretion and direct coordination.",
+  },
+  {
     question: "Is the appointment private?",
     answer: "Yes. AMI Studios works by private appointment only. Timing, location and arrival details are confirmed directly before the booking.",
   },
@@ -19,6 +23,6 @@ export const faq: FaqItem[] = [
   },
   {
     question: "How do I request an appointment?",
-    answer: "Use the request button and share your preferred time, location and appointment type. We confirm availability before anything is scheduled.",
+    answer: "Use the request button and share your preferred time, location and appointment type. Every request is handled in confidence before anything is scheduled.",
   },
 ];

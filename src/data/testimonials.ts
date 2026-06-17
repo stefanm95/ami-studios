@@ -2,18 +2,18 @@ import type { Testimonial } from "../types/content";
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Quiet, punctual and discreet. It feels built for private schedules, not a public reception.",
+    quote: "Discreet from the first message. The atmosphere felt private, warm and carefully composed.",
     name: "Andreea M.",
-    detail: "Founder",
+    detail: "Private client",
   },
   {
-    quote: "The appointment was prepared before I had to ask. Clear timing, quiet setup and no unnecessary conversation.",
+    quote: "The appointment was coordinated with care. Low light, quiet timing and complete respect for privacy.",
     name: "Victor S.",
-    detail: "Executive client",
+    detail: "Hotel appointment",
   },
   {
-    quote: "Professional, minimal and considered. The atmosphere stayed private from arrival to departure.",
+    quote: "A refined presence and a very composed setting. Nothing felt rushed or public.",
     name: "Clara D.",
-    detail: "Creative director",
+    detail: "Residence appointment",
   },
 ];
